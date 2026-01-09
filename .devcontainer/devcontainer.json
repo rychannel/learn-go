@@ -6,7 +6,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"golang.go"
+				"golang.go",
+				"ms-azuretools.vscode-containers"
 			],
 			"settings": {
 				"go.toolsManagement.checkForUpdates": "local",
