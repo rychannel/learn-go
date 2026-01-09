@@ -16,5 +16,5 @@
 		}
 	},
 	"remoteUser": "vscode",
-	"postCreateCommand": "go version"
+	"postCreateCommand": "bash .devcontainer/setup-git.sh"
 }
