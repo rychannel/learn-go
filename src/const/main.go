@@ -4,7 +4,7 @@ import "fmt"
 func main() {
 	const pi = 3.14159
 
-	const {
+	const (
 		red = iota + 1
 		yellow
 		green
@@ -12,7 +12,7 @@ func main() {
 		blue
 		pink
 		black
-	}
+	)
 
 	fmt.Printf("Red: %v points \n", red)
 	fmt.Printf("Blue: %v points \n", blue)
