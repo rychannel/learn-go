@@ -17,7 +17,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 # Set Go environment variables
 ENV GOPATH="/go"
-ENV PATH="${GOPATH}/bin:${PATH}"
+ENV PATH="${GOPATH}/bin:${GOROOT}/bin:${PATH}"
 
 # Create GOPATH directory
 RUN mkdir -p ${GOPATH}/src ${GOPATH}/bin
