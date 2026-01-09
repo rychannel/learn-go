@@ -5,7 +5,7 @@ FROM debian:bookworm-slim
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Update package lists and install essential tools
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     curl \
     wget \
     git \
