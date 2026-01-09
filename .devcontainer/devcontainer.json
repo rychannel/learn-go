@@ -15,6 +15,6 @@
 			}
 		}
 	},
-	"remoteUser": "root",
+	"remoteUser": "vscode",
 	"postCreateCommand": "go version"
 }
