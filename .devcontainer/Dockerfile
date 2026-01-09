@@ -15,16 +15,13 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     golang-go \
     && rm -rf /var/lib/apt/lists/*
 
-# Set Go environment variables
-ENV GOPATH="/go"
+# Set Go environment variables for GOPATH workflow
+ENV GOPATH="/workspaces/learn-go"
+ENV GO111MODULE=off
 ENV PATH="${GOPATH}/bin:${GOROOT}/bin:${PATH}"
 
-# Create GOPATH directory
-RUN mkdir -p ${GOPATH}/src ${GOPATH}/bin
-
 # Create a non-root user for development
-RUN useradd -m -s /bin/bash -u 1000 vscode && \
-    chown -R vscode:vscode ${GOPATH}
+RUN useradd -m -s /bin/bash -u 1000 vscode
 
 # Verify Go installation
 RUN go version

@@ -12,7 +12,8 @@
 			"settings": {
 				"go.toolsManagement.checkForUpdates": "local",
 				"go.useLanguageServer": true,
-				"go.gopath": "/go"
+				"go.gopath": "/workspaces/learn-go",
+				"go.useGoProxyToCheckForToolUpdates": false
 			}
 		}
 	},
