@@ -6,15 +6,17 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"golang.go"
+				"golang.go",
+				"ms-azuretools.vscode-containers"
 			],
 			"settings": {
 				"go.toolsManagement.checkForUpdates": "local",
 				"go.useLanguageServer": true,
-				"go.gopath": "/go"
+				"go.gopath": "/workspaces/learn-go",
+				"go.useGoProxyToCheckForToolUpdates": false
 			}
 		}
 	},
 	"remoteUser": "vscode",
-	"postCreateCommand": "go version"
+	"postCreateCommand": "bash .devcontainer/setup-git.sh"
 }
