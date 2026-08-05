@@ -39,5 +39,13 @@ jobs:
           cd src
           for dir in $(find . -mindepth 1 -maxdepth 1 -type d | sort); do
             echo "Checking $dir"
+            if [ "$dir" = "./encap" ]; then
+              echo "Expected failure for intentionally broken example $dir"
+              if (cd "$dir" && go test ./...); then
+                echo "Unexpected success for intentionally broken example"
+                exit 1
+              fi
+              continue
+            fi
             (cd "$dir" && go test ./...) || exit 1
           done
