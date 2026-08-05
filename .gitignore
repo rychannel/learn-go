@@ -8,6 +8,21 @@
 *.so
 *.dylib
 
+# Compiled Go binaries
+bin/
+# Ignore executables in root (files without extensions)
+/*
+!/*.*
+!*/
+!/LICENSE
+!/README
+!/Makefile
+
+# Ignore compiled binaries in src directories (executables without extensions)
+src/*/[!.]*
+!src/*/*.go
+!src/*/go.*
+
 # Test binary, built with `go test -c`
 *.test
 
@@ -31,3 +46,6 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Ignore build artifacts and Go module cache
+pkg/
