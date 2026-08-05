@@ -1,10 +1,11 @@
 package main
+
 import "fmt"
 
 func main() {
 
-	counter :=1
-	for counter <=5 {
+	counter := 1
+	for counter <= 5 {
 		fmt.Println("While Loop Iteration", counter)
 		counter++
 	}

@@ -10,7 +10,7 @@ func (d *Dims) area() int {
 	return d.width * d.length
 }
 
-func (d *Dims) SetSize( w, l, h int) {
+func (d *Dims) SetSize(w, l, h int) {
 	d.width = w
 	d.length = l
 	d.height = h

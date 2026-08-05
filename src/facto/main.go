@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func facto(num int) int {
@@ -8,7 +9,7 @@ func facto(num int) int {
 	return num * facto(num-1)
 }
 
-func main () {
+func main() {
 	for i := 1; i <= 7; i++ {
 		fmt.Println("Factorial of", i, "is", facto(i))
 	}

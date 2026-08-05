@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 type bird interface {
@@ -6,7 +7,7 @@ type bird interface {
 	move() string
 }
 
-type parrot struct {}
+type parrot struct{}
 
 func (parrot) speak() string {
 	return "Squawk!, Squawk!"
@@ -16,7 +17,7 @@ func (parrot) move() string {
 	return "A parrot flies away."
 }
 
-type chicken struct {}
+type chicken struct{}
 
 func (chicken) speak() string {
 	return "Cluck, Cluck!"
@@ -26,7 +27,7 @@ func (chicken) move() string {
 	return "Chickens cannot fly."
 }
 
-func nudge (b bird) {
+func nudge(b bird) {
 	fmt.Printf("\n%v \n", b.speak())
 	fmt.Printf("%v \n\n", b.move())
 }

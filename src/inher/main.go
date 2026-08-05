@@ -4,16 +4,16 @@ import "fmt"
 
 type member struct {
 	firstName string
-	lastName string
+	lastName  string
 }
 
 func (m member) fullName() string {
-	return m.firstName+" "+m.lastName
+	return m.firstName + " " + m.lastName
 }
 
 type article struct {
 	title string
-	body string
+	body  string
 	member
 }
 

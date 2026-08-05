@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 type coords struct {
@@ -23,5 +24,5 @@ func main() {
 	ring.y = ring.radius
 
 	fmt.Printf("Diameter:%v \n", ring.getDiameter())
-	fmt.Printf("Point X:%v Y:%v \n", ring.x, ring.y )
+	fmt.Printf("Point X:%v Y:%v \n", ring.x, ring.y)
 }

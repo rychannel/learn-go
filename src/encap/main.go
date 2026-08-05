@@ -1,7 +1,8 @@
 package main
+
 import (
-	"fmt"
 	"cube"
+	"fmt"
 )
 
 func main() {

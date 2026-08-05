@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 type car struct {
@@ -13,12 +14,12 @@ func (c car) accelerate() string {
 func main() {
 	porsche := car{
 		color: "red",
-		body: "coupe",
+		body:  "coupe",
 	}
 
 	bently := car{
 		color: "green",
-		body: "saloon",
+		body:  "saloon",
 	}
 
 	fmt.Println("Porsche paint is", porsche.color)

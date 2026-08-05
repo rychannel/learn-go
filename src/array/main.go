@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 func main() {
@@ -8,7 +9,7 @@ func main() {
 	cars[1] = "Ford"
 	cars[2] = "Opel"
 
-	coords := [2][3]int {{1,2,3}, {4,5,6}}
+	coords := [2][3]int{{1, 2, 3}, {4, 5, 6}}
 
 	fmt.Println("Cars:", cars)
 	fmt.Println("Second Car:", cars[1])
